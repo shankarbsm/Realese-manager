@@ -1,0 +1,1766 @@
+{
+	"reportGroup": [{
+			"groupName": "Service",
+			"reportList": [{
+					"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "Open - Service Jobs",
+		"input": {
+			"report_info" : "open_service_calls",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},{
+			"field" : "call_status",
+			"title" : "Status",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		},{
+			"field" : "priority_code",
+			"title" : "Job Priority",
+			"template" : false
+		}, {
+			"field" : "problem_description",  
+			"title" : "Customer Requirement",
+			"template" : false
+		}, {
+			"field" : "additional_information",  
+			"title" : "Additional Info",
+			"template" : false
+		}, {
+			"field" : "customer_name",
+			"title" : "Customer Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_name",
+			"title" : "Contact Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_no",
+			"title" : "Contact Number",
+			"template" : false
+		}, {
+			"field" : "customer_contact_email_id",
+			"title" : "Contact Email",
+			"template" : false
+		}],
+		"summaryName": "Year/Month",
+		"summaryValue": "year_month",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#ffa366','#ff9933','#ff6600','#00cc66','#66ccff','#99ccff','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "pie",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Assignee",
+			"summaryValue": "assignee",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "pie",
+			"split": ""
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "Open - Breakdown Jobs",
+		"input": {
+			"report_info" : "open_service_calls_bdwn",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},{
+			"field" : "call_status",
+			"title" : "Status",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		},{
+			"field" : "priority_code",
+			"title" : "Job Priority",
+			"template" : false
+		}, {
+			"field" : "problem_description",  
+			"title" : "Customer Requirement",
+			"template" : false
+		}, {
+			"field" : "additional_information",  
+			"title" : "Additional Info",
+			"template" : false
+		}, {
+			"field" : "customer_name",
+			"title" : "Customer Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_name",
+			"title" : "Contact Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_no",
+			"title" : "Contact Number",
+			"template" : false
+		}, {
+			"field" : "customer_contact_email_id",
+			"title" : "Contact Email",
+			"template" : false
+		}],
+		"summaryName": "Year/Month",
+		"summaryValue": "year_month",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#ff9999','#ff9933','#ff6600','#00cc66','#66ccff','#99ccff','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "pie",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Assignee",
+			"summaryValue": "assignee",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "pie",
+			"split": ""
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "Warranty Jobs(Current Year)",
+		"input": {
+			"report_info" : "warranty_calls",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		}, {
+			"field" : "call_status",
+			"title" : "Status",
+			"template" : false
+		}, {
+			"field" : "call_type",
+			"title" : "Type",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}, {
+			"field" : "problem_description",  
+			"title" : "Customer Requirement",
+			"template" : false
+		}, {
+			"field" : "additional_information",  
+			"title" : "Additional Info",
+			"template" : false
+		}, {
+			"field" : "customer_name",
+			"title" : "Customer Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_name",
+			"title" : "Contact Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_no",
+			"title" : "Contact Number",
+			"template" : false
+		}, {
+			"field" : "customer_contact_email_id",
+			"title" : "Contact Email",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#cccc00','#ff9933','#ff6600','#00cc66','#66ccff','#99ccff','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "call_status",
+			"seriesName": "Machine Status",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+				}
+			}
+		},{
+			"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "Net Promoter Rating (Current Year)",
+		"input": {
+			"report_info" : "nps_feedback_value",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "feedback_value",
+			"title" : "Feedback Type",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}, {
+			"field" : "call_type",
+			"title" : "Job Type",
+			"template" : false
+		}, {
+			"field" : "customer_name",
+			"title" : "Customer Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_name",
+			"title" : "Contact Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_no",
+			"title" : "Contact Number",
+			"template" : false
+		}, {
+			"field" : "customer_contact_email_id",
+			"title" : "Contact Email",
+			"template" : false
+		}, {
+			"field" : "resource_emp_id",
+			"title" : "Service Engineer Name",
+			"template" : false
+		},{
+			"field" : "feedback_date",
+			"title" : "Feedback Date",
+			"template" : false
+		},{
+			"field" : "overall_summary_code",
+			"title" : "Overall summary code",
+			"template" : false
+		},{
+			"field" : "overall_summary_code_value",
+			"title" : "Overall summary code value",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "Feedback Type",
+		"seriesValue": "feedback_value",
+		"uom": "Percentage (%)",
+		"chartType": "column",
+		"stack" : "true",		
+		"color":"['#ff3300','yellow','#ace600']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Percentage (%)",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Percentage (%)",
+			"chartType": "pie",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Assignee",
+			"summaryValue": "assignee",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Percentage (%)",
+			"chartType": "pie",
+			"split": ""
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "NPR Feedback Value Count (Current Year)",
+		"input": {
+			"report_info" : "nps_feedback_count",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},{
+			"field" : "call_type",
+			"title" : "Type",
+			"template" : false
+		},{
+			"field" : "feedback_value",
+			"title" : "Feedback Type",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}, {
+			"field" : "call_type",
+			"title" : "Job Type",
+			"template" : false
+		}, {
+			"field" : "customer_name",
+			"title" : "Customer Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_name",
+			"title" : "Contact Name",
+			"template" : false
+		}, {
+			"field" : "customer_contact_no",
+			"title" : "Contact Number",
+			"template" : false
+		}, {
+			"field" : "customer_contact_email_id",
+			"title" : "Contact Email",
+			"template" : false
+		}, {
+			"field" : "resource_emp_id",
+			"title" : "Service Engineer Name",
+			"template" : false
+		},{
+			"field" : "feedback_date",
+			"title" : "Feedback Date",
+			"template" : false
+		},{
+			"field" : "overall_summary_code",
+			"title" : "Overall summary code",
+			"template" : false
+		},{
+			"field" : "overall_summary_code_value",
+			"title" : "Overall summary code value",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "Feedback Type",
+		"seriesValue": "feedback_type",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#ff3300','yellow','#ace600']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "pie",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Assignee",
+			"summaryValue": "assignee",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "pie",
+			"split": ""
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "NPR Submission Pending",
+		"input": {
+			"report_info" : "nps_feedback_count_weekly",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},{
+			"field" : "call_type",
+			"title" : "Type",
+			"template" : false
+		},{
+			"field" : "no_of_days",
+			"title" : "Week Spec",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "Week Spec",
+		"seriesValue": "no_of_days",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"true",		
+		"color":"['#cc66ff','#ffa366','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']","drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "no_of_days",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",		"color":"['#ffa366','#ff9999','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "no_of_days",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Assignee",
+			"summaryValue": "assignee",
+			"seriesName": "",
+			"seriesValue": "no_of_days",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": ""
+				}
+			}
+		},{
+			"reportType": "drill",
+			"reportCode": "report_mean_time_between_failure",
+		"reportName": "Mean Time Between Failure (Hours)",
+		"input": {
+			"report_info" : "mean_time_between_failure"
+		},
+			"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "failure_hours",
+			"title" : "Difference in hrs",
+			"template" : false
+		},{
+			"field" : "company_location",
+			"title" : "Zone",
+			"template" : false
+		}, {
+			"field" : "dealer",
+			"title" : "Dealer",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Asset",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Hours",
+		"chartType": "pie",		"color":"['#00cc66','#cccc00','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "dealer",
+			"summaryValue": "dealer_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Hours",
+			"chartType": "pie",
+			"split": "",		"color":"['#ffcc99','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Model",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Hours",
+			"chartType": "pie",
+			"split": "",		"color":"['#9999ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Equipment",
+			"summaryValue": "equipment_id",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Hours",
+			"chartType": "pie",
+			"split": "",		"color":"['#ffccff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_mobile_call_metrics",
+		"reportName": "Mean Time To Resolve (Hours)",
+		"input": {
+			"report_info" : "mean_time_to_resolve_mod"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "difference_in_hrs",
+			"title" : "Difference in hrs",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Hours",
+		"chartType": "pie",
+		"stack":"",		"color":"['#00cc66','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Hours",
+			"chartType": "pie",
+			"split": "",		"color":"['#ffcc99','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Model",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Hours",
+			"chartType": "pie",
+			"split": "",		"color":"['#9999ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Equipment",
+			"summaryValue": "equipment_id",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Hours",
+			"chartType": "pie",
+			"split": "",		"color":"['#ffccff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+				}
+			}
+		},{
+			"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "1:1 Ratio",
+		"input": {
+			"report_info" : "machine_ageing_count"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine Id",
+			"template" : false
+		}, {
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "ageing_period",
+			"title" : "Ageing Period",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_category",
+			"title" : "Model Category",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}, {
+			"field" : "customer_name",
+			"title" : "Customer Name",
+			"template" : false
+		}, {
+			"field" : "contact_person_1_mobile_no",
+			"title" : "Customer Contact Number",
+			"template" : false
+		}],
+		"summaryName": "Period",
+		"summaryValue": "ageing_period",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#4286f4','#00cc66','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		
+			"color":"['#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		
+			"color":"['#00cc66','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "4" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+					}
+				}
+			}
+		]
+	}, {
+			"groupName": "Spare Sales",
+			"reportList": [{
+			"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Lead Funnel - Nos",
+		"input": {
+			"report_info" : "sales_projection_count_lead"
+		},"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		},{
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		},  {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#00cc66','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		
+			"color":"['#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "3" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "4" : {
+			"input": {},
+			"summaryName": "Month Wise",
+			"summaryValue": "month_wise",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",
+			"color":"['#ecb3ff','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Lead Funnel By Lead Source- Nos",
+		"input": {
+			"report_info" : "sales_projection_count_lead_leadsource"
+		},"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		},{
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		},  {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "lead_source",
+			"title" : "Lead Source",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "Lead Source ",
+		"seriesValue": "lead_source",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"true",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",		
+			"color":"['#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": " Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "3" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": " Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "4" : {
+			"input": {},
+			"summaryName": "Month Wise",
+			"summaryValue": "month_wise",
+			"seriesName": " Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",
+			"color":"['#ecb3ff','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Lead Funnel By Lead Source (Percentage)",
+		"input": {
+			"report_info" : "sales_projection_count_lead_leadsourcep"
+		},"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		},{
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		},  {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "lead_source",
+			"title" : "Lead Source",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "Lead Source ",
+		"seriesValue": "lead_source",
+		"uom": "Percentage (%)",
+		"chartType": "column",
+		"stack":"true",		"color":"['#00cc66','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Percentage (%)",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",		
+			"color":"['#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": " Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Percentage (%)",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "3" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": " Lead Source",
+			"seriesValue": "lead_source",
+			"uom": "Percentage (%)",
+			"chartType": "column",
+			"stack":"true",
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Opportunity Funnel - Nos",
+		"input": {
+			"report_info" : "sales_projection_count_opper"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		},  {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"",		"color":"['#cccc00','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		
+			"color":"['#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "3" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "4" : {
+			"input": {},
+			"summaryName": "Month Wise",
+			"summaryValue": "month_wise",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"split": "",
+			"color":"['#ecb3ff','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Opportunity Funnel - Value ('000s INR)",
+		"input": {
+			"report_info" : "sales_projection_value_opper"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		},{
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "charge_type",
+			"title" : "Charge Type",
+			"template" : false
+		}, {
+			"field" : "charge_amount",
+			"title" : "Charge Amount",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Zone",
+		"summaryValue": "company_location",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Value",
+		"chartType": "column",
+		"format":"true", 
+		"stack":"",	"color":"['#cc66ff','#ff9900','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		    "4" : {
+			"input": {},
+			"summaryName": "Month Wise",
+			"summaryValue": "month_wise",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"split": "",
+			"color":"['#ecb3ff','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Won Vs Lost - Nos (Current Year)",
+		"input": {
+			"report_info" : "sales_projection_win_vs_lost_count"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Job #",
+			"template" : false
+		}, {
+			"field" : "projection_type",
+			"title" : "Type",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		},{
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "Type",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"true",	"color":"['#9999ff','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "Type",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "Type",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "Type",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	 
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "4" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "Type",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	},{
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Won Vs Lost - Value (Current Year)",
+		"input": {
+			"report_info" : "sales_projection_value_win_vs_lost_value"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Job #",
+			"template" : false
+		}, {
+			"field" : "charge_type",
+			"title" : "Type",
+			"template" : false
+		}, {
+			"field" : "charge_amount",
+			"title" : "Amount",
+			"template" : false
+		},  {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		},{
+			"field" : "asset_status",
+			"title" : "Machine Status",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		},{
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "Amount",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"true",	"color":"['#cc0099','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "Amount",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "Amount",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "Amount",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	 
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "4" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "Amount",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+				}
+			}
+		}, {
+		"reportType": "drill",
+		"reportCode": "report_sales_projection_info",
+		"reportName": "Parts Revenue By Lead Source ('000s INR)",
+		"input": {
+			"report_info" : "sales_projection_leadsource"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "lead_source",
+			"title" : "Lead Source",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model #",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "charge_type",
+			"title" : "Sales Type",
+			"template" : false
+		}, {
+			"field" : "charge_amount",
+			"title" : "Sales Value",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Lead Source",
+		"summaryValue": "lead_source",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Value",
+		"chartType": "bar",
+		"format":"true", 
+		"stack":"",	"color":"['#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+			"1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "4" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Value",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   }
+		}
+	}, {
+		    "reportType": "drill",
+		    "reportCode": "report_sales_projection_info",
+		    "reportName": "Parts Revenue By Lead Source - Nos",
+		    "input": {
+			    "report_info" : "sales_projection_leadsource_count"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "lead_source",
+			"title" : "Lead Source",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model #",
+			"template" : false
+		}, {
+			"field" : "equipment_type",
+			"title" : "Model Type",
+			"template" : false
+		}, {
+			"field" : "charge_type",
+			"title" : "Sales Type",
+			"template" : false
+		}, {
+			"field" : "charge_amount",
+			"title" : "Sales Value",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Lead Source",
+		"summaryValue": "lead_source",
+		"seriesName": "",
+		"seriesValue": "",
+		"uom": "Count",
+		"chartType": "bar",
+		"format":"true", 
+		"stack":"",	"color":"['#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']",
+		"drillOrder": {
+			"1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Status",
+			"summaryValue": "asset_status",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",		"color":"['#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "4" : {
+			"input": {},
+			"summaryName": "Product Group",
+			"summaryValue": "equipment_type",
+			"seriesName": "",
+			"seriesValue": "",
+			"uom": "Count",
+			"chartType": "column",
+			"format":"true", 
+			"split": "",
+			"color":"['#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+						}
+					}
+				}
+			]
+		}
+	]
+}
+		

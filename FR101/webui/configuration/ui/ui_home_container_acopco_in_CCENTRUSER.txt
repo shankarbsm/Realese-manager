@@ -1,0 +1,97 @@
+{
+	"reportGroup": [{
+			"groupName": "Service",
+			"reportList": [{		
+		"reportType": "drill",
+		"reportCode": "report_dealer_details_info",
+		"reportName": "NPR Submission Pending",
+		"input": {
+			"report_info" : "nps_feedback_count_weekly",
+			"period":"year"
+		},
+		"export" : {
+			"summary" : "true", 
+			"detailedReport" : "true", 
+			"chartImage" : "true"
+		},
+		"detailedReport" : [{
+			"field" : "call_ref_no",
+			"title" : "Call #",
+			"template" : false
+		},{
+			"field" : "call_type",
+			"title" : "Type",
+			"template" : false
+		},{
+			"field" : "no_of_days",
+			"title" : "Week Spec",
+			"template" : false
+		}, {
+			"field" : "asset_id",
+			"title" : "Machine #",
+			"template" : false
+		}, {
+			"field" : "equipment_id",
+			"title" : "Model Id",
+			"template" : false
+		}, {
+			"field" : "org_lvl_code",
+			"title" : "Dealer Code",
+			"template" : false
+		}, {
+			"field" : "emp_name",
+			"title" : "Employee Name",
+			"template" : false
+		}, {
+			"field" : "comp_loc",
+			"title" : "Company Location",
+			"template" : false
+		}],
+		"summaryName": "Month",
+		"summaryValue": "month",
+		"seriesName": "Week Spec",
+		"seriesValue": "no_of_days",
+		"uom": "Count",
+		"chartType": "column",
+		"stack":"true",		
+		"color":"['#cc66ff','#ffa366','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']","drillOrder": {
+		   "1" : {
+			"input": {},
+			"summaryName": "Zone",
+			"summaryValue": "company_location",
+			"seriesName": "",
+			"seriesValue": "no_of_days",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",		"color":"['#ffa366','#ff9999','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "2" : {
+			"input": {},
+			"summaryName": "Dealer",
+			"summaryValue": "org_lvl_code",
+			"seriesName": "",
+			"seriesValue": "no_of_days",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": "",		"color":"['#00cc66','#ff6600','#cc66ff','#ff66ff','#cc0099','#ff9900','#ffcc99','#ffcccc','#ffccff','#cc99ff','#9999ff','#3333cc','#ff3300','#ffa366','#ff9999','#ff99bb','#ff99dd','#ffb3ff','#ecb3ff']"
+		   },
+		   "3" : {
+			"input": {},
+			"summaryName": "Assignee",
+			"summaryValue": "assignee",
+			"seriesName": "",
+			"seriesValue": "no_of_days",
+			"uom": "Count",
+			"chartType": "column",
+			"stack":"true",	
+			"split": ""
+						}
+					}
+				}
+			]
+		}
+	]
+}
+		
